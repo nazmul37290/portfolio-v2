@@ -1,0 +1,117 @@
+Create a modern, professional portfolio website for Md. Nazmul Haque, a Full Stack MERN Developer skilled in React.js, Next.js, Tailwind CSS, Node.js, Express.js, MongoDB, and TypeScript.
+
+The design should have a dark, elegant, and tech-oriented feel with smooth Framer Motion animations, minimal glassmorphism accents, and professional gradient highlights. The layout must be clean, modern, and responsive — optimized for both desktop and mobile.
+
+🎨 Design Direction
+
+Theme: Dark tech aesthetic
+
+Primary Background: #0f172a (navy slate dark)
+
+Text: Light gray (#e2e8f0) and muted (#94a3b8)
+
+Accent Gradient:
+
+from-[#6366F1] via-[#3B82F6] to-[#0EA5E9]
+
+Indigo → Blue → Cyan (modern tech vibe)
+
+Typography: Sleek, geometric sans-serif (like Inter, Poppins, or Satoshi)
+
+Buttons: Rounded, gradient-filled with hover glow
+
+Animation Style: Subtle motion, fade-ins, slide-ups, and staggered reveals
+
+Scroll Behavior: Smooth with section reveal effects
+
+📄 Sections to Include
+
+Hero Section
+
+Animated introduction: “Hi, I’m Md. Nazmul Haque”
+
+Subtitle: “Full Stack MERN Developer | Building Scalable & Modern Web Applications”
+
+Gradient call-to-action buttons: “View Projects” and “Contact Me”
+
+Animated background (gradient mesh, particle field, or subtle waves)
+
+About Me Section
+
+Professional photo (with soft border glow)
+
+Brief intro about experience and passion for modern web technologies
+
+Floating icons or animated elements representing the tech stack
+
+Skills Section
+
+Grid or grouped list of technologies (Frontend, Backend, Tools)
+
+Include icons for React, Next.js, Node.js, Express, MongoDB, Tailwind, TypeScript
+
+Hover animations or progress-style visualization
+
+Experience Section
+
+Timeline layout with company name, position, duration, and achievements
+
+Framer Motion scroll-triggered fade or slide animations
+
+Education Section
+
+Clean cards or vertical timeline with institution, degree, and years
+
+Subtle hover animation and iconography
+
+Projects Section
+
+Grid or carousel display
+
+Each project includes title, preview image, short description, stack tags, and links (Live / GitHub)
+
+Hover gradient overlay and animated transitions between projects
+
+Testimonials Section (Optional)
+
+Small section for client or collaborator feedback
+
+Animated gradient border or glowing highlight effect on hover
+
+Contact Section
+
+Animated contact form with floating labels
+
+Include links/icons for GitHub, LinkedIn, Email
+
+Gradient “Send Message” button with hover transition
+
+Small motion on icon hover (scale + glow)
+
+Footer
+
+Minimal and elegant
+
+Text: “© 2025 Md. Nazmul Haque — Built with ❤️ using Next.js & Tailwind CSS”
+
+Animated underline hover effects on social links
+
+⚙️ Animation & UX Notes
+
+Use Framer Motion for transitions, text reveals, and scroll-triggered effects
+
+Implement Lenis or GSAP for smooth scrolling and parallax effects
+
+Include light and dark mode toggle (dark by default)
+
+Add small hover glow effects on buttons and icons for interactive depth
+
+💡 Bonus Enhancements
+
+Add a Tech Stack Experience Meter or Skill Radar Chart for visual flair
+
+Include a Project Details Modal with smooth opening/closing animations
+
+Use scroll-triggered gradient reveals for section headings
+
+Add SEO meta tags and Open Graph previews for professional visibility
