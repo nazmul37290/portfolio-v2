@@ -5,15 +5,15 @@ import { GraduationCap } from "lucide-react";
 
 const education = [
   {
-    institution: "University of Computer Science",
-    degree: "Bachelor of Science in Computer Science",
-    years: "2016 - 2020",
-    description: "Specialized in Software Engineering and Web Technologies",
+    institution: "Bogura Polytechnic Institute",
+    degree: "Diploma In Engineering ( Computer Technology )",
+    years: "2019 - 2023",
+    description: "Specialized in Software Development and Web Technologies",
   },
   {
-    institution: "Advanced Web Development Bootcamp",
-    degree: "Full Stack Development Certificate",
-    years: "2020",
+    institution: "Programming Hero",
+    degree: "Complete Web Development with Jhankar Mahbub",
+    years: "2024",
     description: "Intensive training in MERN stack and modern web practices",
   },
   {
@@ -42,7 +42,7 @@ export function EducationSection() {
           className="text-center mb-16"
         >
           <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold mb-4 bg-gradient-to-r from-primary via-chart-2 to-chart-3 text-transparent bg-clip-text">
-            Education
+            Education & Courses
           </h2>
           <div className="w-20 h-1 bg-gradient-to-r from-primary via-chart-2 to-chart-3 mx-auto rounded-full" />
           <p className="mt-6 text-muted-foreground text-lg max-w-2xl mx-auto">

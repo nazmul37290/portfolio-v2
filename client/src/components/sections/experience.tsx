@@ -5,37 +5,28 @@ import { Briefcase } from "lucide-react";
 
 const experiences = [
   {
-    company: "Tech Innovations Ltd.",
-    position: "Senior Full Stack Developer",
-    duration: "2023 - Present",
-    achievements: [
-      "Led development of a high-traffic e-commerce platform serving 100K+ users",
-      "Architected microservices infrastructure reducing response time by 40%",
-      "Mentored junior developers and established coding best practices",
-      "Implemented CI/CD pipeline improving deployment efficiency by 60%",
-    ],
-  },
-  {
-    company: "Digital Solutions Inc.",
+    company: "Digital Crop",
     position: "Full Stack Developer",
-    duration: "2021 - 2023",
+    duration: "August, 2024 - Present",
     achievements: [
-      "Developed and maintained 15+ client projects using MERN stack",
-      "Optimized database queries resulting in 50% faster load times",
-      "Integrated third-party APIs and payment gateways",
-      "Collaborated with designers to create responsive UI/UX",
+      "Developed and optimized full-stack business management and booking platforms using the MERN stack.",
+      "Architected modular RESTful backend services with Express and MongoDB, reducing response times by over 40%.",
+      "Implemented secure authentication systems with JWT, enhancing user data protection and session management.",
+
+      "Enhanced UI/UX using React.js, Tailwind CSS, and Framer Motion, delivering smooth, responsive, and modern interfaces.",
+      "Collaborated with other developers to maintain consistent coding standards and improve overall project quality."
     ],
   },
   {
-    company: "Startup Ventures",
-    position: "Junior Developer",
-    duration: "2020 - 2021",
+    company: "National Academy For Computer Training And Research (NACTAR)",
+    position: "External Instructor",
+    duration: "June, 2024 - August, 2024",
     achievements: [
-      "Built RESTful APIs using Node.js and Express.js",
-      "Implemented responsive frontends with React and Tailwind CSS",
-      "Participated in agile development and code reviews",
-      "Contributed to open-source projects and team knowledge sharing",
-    ],
+      "Conducted hands-on training for two batches on HTML, CSS, and JavaScript",
+      "Developed practical front-end projects to enhance student learning",
+      "Guided learners on responsive design and modern web development practices",
+      "Improved course engagement through interactive coding sessions"
+    ]
   },
 ];
 
@@ -80,18 +71,16 @@ export function ExperienceSection() {
                     : { opacity: 0, x: index % 2 === 0 ? -50 : 50 }
                 }
                 transition={{ duration: 0.6, delay: index * 0.2 }}
-                className={`relative md:grid md:grid-cols-2 md:gap-8 ${
-                  index % 2 === 0 ? "" : "md:grid-flow-dense"
-                }`}
+                className={`relative md:grid md:grid-cols-2 md:gap-8 ${index % 2 === 0 ? "" : "md:grid-flow-dense"
+                  }`}
               >
                 {/* Timeline dot */}
                 <div className="absolute left-8 md:left-1/2 w-4 h-4 bg-primary rounded-full transform -translate-x-1/2 border-4 border-background z-10" />
 
                 {/* Content */}
                 <div
-                  className={`ml-20 md:ml-0 ${
-                    index % 2 === 0 ? "md:col-start-2" : "md:col-start-1"
-                  }`}
+                  className={`ml-20 md:ml-0 ${index % 2 === 0 ? "md:col-start-2" : "md:col-start-1"
+                    }`}
                 >
                   <div className="bg-card border border-card-border rounded-lg p-6 hover-elevate transition-all duration-300 shadow-lg">
                     <div className="flex items-start gap-4 mb-4">

@@ -23,15 +23,13 @@ export function HeroSection() {
         y: 100,
         opacity: 0,
         duration: 1,
-        stagger: 0.2,
         ease: "power3.out",
       });
 
       gsap.from(".hero-button", {
-        y: 50,
+        y: 150,
         opacity: 0,
-        duration: 0.8,
-        delay: 0.8,
+        duration: 1,
         stagger: 0.2,
         ease: "power3.out",
       });
@@ -117,7 +115,7 @@ export function HeroSection() {
           <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
             <Button
               size="lg"
-              className="hero-button text-lg px-8 py-6 bg-gradient-to-r from-primary via-chart-2 to-chart-3 hover:shadow-lg hover:shadow-primary/50 transition-all duration-300 border-0"
+              className="hero-button text-lg px-8 py-6 bg-gradient-to-r from-primary via-chart-2 to-chart-3 hover:shadow-lg hover:shadow-primary/50  border-0"
               onClick={() => scrollToSection("projects")}
               data-testid="button-view-projects"
             >
@@ -126,7 +124,7 @@ export function HeroSection() {
             <Button
               size="lg"
               variant="outline"
-              className="hero-button text-lg px-8 py-6 backdrop-blur-sm bg-background/50 hover:bg-background/80 transition-all duration-300"
+              className="hero-button text-lg px-8 py-6 backdrop-blur-sm bg-background/50 hover:bg-background/80 "
               onClick={() => scrollToSection("contact")}
               data-testid="button-contact-me"
             >
@@ -137,7 +135,7 @@ export function HeroSection() {
 
         {/* Scroll indicator */}
         <motion.div
-          className="absolute bottom-8 left-1/2 transform -translate-x-1/2"
+          className="absolute -bottom-14 left-1/2 transform -translate-x-1/2"
           initial={{ opacity: 0, y: -10 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.6, delay: 1.2 }}
