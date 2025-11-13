@@ -1,3 +1,6 @@
+import { fileURLToPath } from "url";
+
+
 import express, { type Express } from "express";
 import fs from "fs";
 import path from "path";
@@ -6,6 +9,8 @@ import { type Server } from "http";
 import viteConfig from "../vite.config";
 import { nanoid } from "nanoid";
 
+const __filename = fileURLToPath(import.meta.url);
+const __dirname = path.dirname(__filename);
 const viteLogger = createLogger();
 
 export function log(message: string, source = "express") {
@@ -46,11 +51,11 @@ export async function setupVite(app: Express, server: Server) {
 
     try {
       const clientTemplate = path.resolve(
-        import.meta.dirname,
-        "..",
-        "client",
-        "index.html",
-      );
+  __dirname,
+  "..",
+  "client",
+  "index.html",
+);
 
       // always reload the index.html file from disk incase it changes
       let template = await fs.promises.readFile(clientTemplate, "utf-8");

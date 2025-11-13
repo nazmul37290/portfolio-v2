@@ -43,6 +43,7 @@ export function SkillsSection() {
   const ref = useRef(null);
   const isInView = useInView(ref, { once: true, margin: "-100px" });
   const [viewMode, setViewMode] = useState<"grid" | "radar">("grid");
+  const [activeHoveredSkill, setActiveHoveredSkill] = useState('')
 
   return (
     <section
@@ -106,30 +107,63 @@ export function SkillsSection() {
                     const Icon = skill.icon;
                     return (
                       <motion.div
+                        onMouseEnter={() => setActiveHoveredSkill(skill.name)}
                         key={skill.name}
-                        initial={{ opacity: 0, scale: 0.8 }}
+                        initial={{ opacity: 0, y: 30, scale: 0.9 }}
                         animate={
                           isInView
-                            ? { opacity: 1, scale: 1 }
-                            : { opacity: 0, scale: 0.8 }
+                            ? { opacity: 1, y: 0, scale: 1 }
+                            : { opacity: 0, y: 30, scale: 0.9 }
                         }
                         transition={{
-                          duration: 0.4,
-                          delay: categoryIndex * 0.2 + skillIndex * 0.1,
+                          duration: 0.5,
+
+                          ease: "easeOut",
                         }}
-                        whileHover={{ scale: 1.05 }}
-                        className="group"
+                        whileHover={{ scale: 1.07, rotateX: 2, rotateY: -20, perspective: 1200 }}
+                        className="group relative cursor-pointer select-none"
                         data-testid={`card-skill-${skill.name.toLowerCase().replace(/\s+/g, '-')}`}
-                      >
-                        <div className="bg-card border border-card-border rounded-lg p-6 text-center hover-elevate active-elevate-2 transition-all duration-300 h-full flex flex-col items-center justify-center gap-3">
+
+                      >{activeHoveredSkill === skill.name && (
+                        <motion.div
+                          className="absolute -bottom-2 left-0  right-0 h-0.5 bg-gradient-to-r from-primary via-chart-2 to-chart-3"
+                          layoutId="activeHoveredSkill"
+                          transition={{ duration: 0.3 }}
+                        />
+                      )}
+                        <div
+                          className="
+      bg-gradient-to-br from-[#0f172a]/90 to-[#1e293b]/90
+      border border-white/5
+      rounded-xl p-6 text-center
+    
+      hover:shadow-[0_0_25px_rgba(56,189,248,0.2)]
+      transition-all duration-300
+      flex flex-col items-center justify-center gap-3
+      backdrop-blur-sm
+    "
+                        >
                           <div className="relative">
-                            <div className="absolute inset-0 bg-gradient-to-r from-primary/20 to-chart-2/20 rounded-full blur-xl opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
+                            <div
+                              className="
+          absolute inset-0
+          bg-gradient-to-r from-blue-500/20 to-purple-500/20
+          rounded-full blur-2xl opacity-0
+          group-hover:opacity-100
+          transition-opacity duration-500
+        "
+                            />
                             <Icon
-                              className="w-10 h-10 sm:w-12 sm:h-12 relative z-10 transition-transform duration-300 group-hover:scale-110"
+                              className="
+          w-10 h-10 sm:w-12 sm:h-12
+          relative z-10
+          transition-transform duration-500
+          group-hover:scale-110
+        "
                               style={{ color: skill.color }}
                             />
                           </div>
-                          <span className="font-medium text-sm text-foreground">
+                          <span className="font-medium text-sm text-zinc-200 group-hover:text-white transition-colors duration-300">
                             {skill.name}
                           </span>
                         </div>

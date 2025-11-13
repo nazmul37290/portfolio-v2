@@ -4,6 +4,7 @@ import { ArrowDown } from "lucide-react";
 import { useRef, useEffect } from "react";
 import { gsap } from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
+import Particles from '@/components/particles'
 
 gsap.registerPlugin(ScrollTrigger);
 
@@ -52,6 +53,9 @@ export function HeroSection() {
       className="relative min-h-screen flex items-center justify-center overflow-hidden"
       style={{ opacity, scale }}
     >
+      <div className="absolute top-0 bottom-0 right-0 left-0">
+        <Particles />
+      </div>
       {/* Animated gradient background */}
       <div className="absolute inset-0 bg-gradient-to-br from-primary/10 via-chart-2/10 to-chart-3/10">
         <div className="absolute inset-0">

@@ -57,11 +57,10 @@ export function Navigation() {
 
   return (
     <motion.nav
-      className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${
-        isScrolled
-          ? "bg-background/80 backdrop-blur-lg border-b border-border shadow-lg"
-          : "bg-transparent"
-      }`}
+      className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${isScrolled
+        ? "bg-background/80 backdrop-blur-lg border-b border-border shadow-lg"
+        : "bg-transparent"
+        }`}
       initial={{ y: -100 }}
       animate={{ y: 0 }}
       transition={{ duration: 0.6 }}
@@ -87,17 +86,16 @@ export function Navigation() {
                 variant="ghost"
                 size="sm"
                 onClick={() => scrollToSection(link.href.substring(1))}
-                className={`relative transition-colors duration-300 ${
-                  activeSection === link.href.substring(1)
-                    ? "text-primary"
-                    : "text-foreground hover:text-primary"
-                }`}
+                className={`relative transition-colors duration-300 ${activeSection === link.href.substring(1)
+                  ? "text-primary"
+                  : "text-foreground hover:text-primary"
+                  }`}
                 data-testid={`link-${link.name.toLowerCase()}`}
               >
                 {link.name}
                 {activeSection === link.href.substring(1) && (
                   <motion.div
-                    className="absolute bottom-0 left-0 right-0 h-0.5 bg-gradient-to-r from-primary via-chart-2 to-chart-3"
+                    className="absolute bottom-0 left-0  right-0 h-0.5 bg-gradient-to-r from-primary via-chart-2 to-chart-3"
                     layoutId="activeSection"
                     transition={{ duration: 0.3 }}
                   />
@@ -147,11 +145,10 @@ export function Navigation() {
                   variant="ghost"
                   size="sm"
                   onClick={() => scrollToSection(link.href.substring(1))}
-                  className={`w-full justify-start ${
-                    activeSection === link.href.substring(1)
-                      ? "text-primary bg-primary/10"
-                      : "text-foreground"
-                  }`}
+                  className={`w-full justify-start ${activeSection === link.href.substring(1)
+                    ? "text-primary bg-primary/10"
+                    : "text-foreground"
+                    }`}
                   data-testid={`link-mobile-${link.name.toLowerCase()}`}
                 >
                   {link.name}

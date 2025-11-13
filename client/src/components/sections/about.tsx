@@ -2,7 +2,7 @@ import { motion } from "framer-motion";
 import { useInView } from "framer-motion";
 import { useRef } from "react";
 import { Code2, Database, Palette, Server, Smartphone, Zap } from "lucide-react";
-import { Avatar, AvatarFallback } from "@/components/ui/avatar";
+import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar";
 
 const techIcons = [
   { icon: Code2, label: "Frontend", delay: 0.1 },
@@ -90,7 +90,8 @@ export function AboutSection() {
               {/* Avatar */}
               <div className="relative z-10">
                 <div className="absolute inset-0 bg-gradient-to-r from-primary via-chart-2 to-chart-3 rounded-full blur-2xl opacity-30 animate-glow" />
-                <Avatar className="w-48 h-48 sm:w-56 sm:h-56 md:w-64 md:h-64 border-4 border-primary/20 relative">
+                <Avatar className="w-48 h-48 sm:w-56 sm:h-56 md:w-64 md:h-64 border-[10px] border-primary/20 relative">
+                  <AvatarImage src="nazmul_haque.png" className="object-cover"></AvatarImage>
                   <AvatarFallback className="text-6xl font-bold bg-gradient-to-br from-primary/20 to-chart-3/20 text-foreground">
                     NH
                   </AvatarFallback>
