@@ -5,12 +5,14 @@ import { GraduationCap } from "lucide-react";
 
 const education = [
   {
+    logo: '/bpi.png',
     institution: "Bogura Polytechnic Institute",
     degree: "Diploma In Engineering ( Computer Technology )",
     years: "2019 - 2023",
     description: "Specialized in Software Development and Web Technologies",
   },
   {
+    logo: '/ph_logo.svg',
     institution: "Programming Hero",
     degree: "Complete Web Development with Jhankar Mahbub",
     years: "2024",
@@ -63,7 +65,11 @@ export function EducationSection() {
               <div className="bg-card border border-card-border rounded-lg p-6 h-full hover-elevate active-elevate-2 transition-all duration-300 shadow-lg">
                 <div className="flex items-start gap-4 mb-4">
                   <div className="bg-gradient-to-br from-primary/20 to-chart-2/20 p-3 rounded-lg group-hover:scale-110 transition-transform duration-300">
-                    <GraduationCap className="w-6 h-6 text-primary" />
+                    {
+                      edu?.logo ? <img className="h-6 w-6" src={edu?.logo} alt="" /> :
+                        <GraduationCap className="w-6 h-6 text-primary" />
+
+                    }
                   </div>
                   <div className="flex-1">
                     <p className="text-sm text-muted-foreground mb-2">

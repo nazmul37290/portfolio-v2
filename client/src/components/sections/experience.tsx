@@ -5,6 +5,7 @@ import { Briefcase } from "lucide-react";
 
 const experiences = [
   {
+    logo: '/dc.png',
     company: "Digital Crop",
     position: "Full Stack Developer",
     duration: "August, 2024 - Present",
@@ -18,6 +19,7 @@ const experiences = [
     ],
   },
   {
+    logo: '/nactar.png',
     company: "National Academy For Computer Training And Research (NACTAR)",
     position: "External Instructor",
     duration: "June, 2024 - August, 2024",
@@ -85,7 +87,8 @@ export function ExperienceSection() {
                   <div className="bg-card border border-card-border rounded-lg p-6 hover-elevate transition-all duration-300 shadow-lg">
                     <div className="flex items-start gap-4 mb-4">
                       <div className="bg-gradient-to-br from-primary/20 to-chart-2/20 p-3 rounded-lg">
-                        <Briefcase className="w-6 h-6 text-primary" />
+                        <img src={exp.logo} className="w-6 h-6" alt={exp.company} />
+
                       </div>
                       <div className="flex-1">
                         <h3 className="text-xl font-semibold text-foreground mb-1">
