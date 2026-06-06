@@ -1,7 +1,7 @@
 import { motion } from "framer-motion";
 import { useInView } from "framer-motion";
 import { useRef, useState } from "react";
-import { SiReact, SiNextdotjs, SiNodedotjs, SiExpress, SiMongodb, SiTailwindcss, SiTypescript, SiJavascript, SiGit, SiDocker, SiPostgresql, SiFigma } from "react-icons/si";
+import { SiReact, SiNextdotjs, SiNodedotjs, SiExpress, SiMongodb, SiTailwindcss, SiTypescript, SiJavascript, SiGit, SiDocker, SiPostgresql, SiFigma, SiHtml5, SiCss3, SiBootstrap, SiWordpress, SiLaravel, SiMysql, SiGithub, SiJsonwebtokens, SiSwagger, SiAdobephotoshop, SiOnlyoffice } from "react-icons/si";
 import { Radar, RadarChart, PolarGrid, PolarAngleAxis, PolarRadiusAxis, ResponsiveContainer } from "recharts";
 import { Button } from "@/components/ui/button";
 import { LayoutGrid, Activity } from "lucide-react";
@@ -12,16 +12,29 @@ const skills = {
     { name: "Next.js", icon: SiNextdotjs, color: "#000000", proficiency: 90 },
     { name: "TypeScript", icon: SiTypescript, color: "#3178C6", proficiency: 88 },
     { name: "JavaScript", icon: SiJavascript, color: "#F7DF1E", proficiency: 95 },
+    { name: "HTML5", icon: SiHtml5, color: "#E34F26", proficiency: 90 },
+    { name: "CSS3", icon: SiCss3, color: "#1572B6", proficiency: 90 },
     { name: "Tailwind CSS", icon: SiTailwindcss, color: "#06B6D4", proficiency: 92 },
+    { name: "Bootstrap", icon: SiBootstrap, color: "#7952B3", proficiency: 85 },
+    { name: "WordPress", icon: SiWordpress, color: "#21759B", proficiency: 80 },
   ],
   Backend: [
     { name: "Node.js", icon: SiNodedotjs, color: "#339933", proficiency: 93 },
     { name: "Express.js", icon: SiExpress, color: "#000000", proficiency: 90 },
+    { name: "Laravel", icon: SiLaravel, color: "#FF2D20", proficiency: 82 },
+  ],
+  Database: [
     { name: "MongoDB", icon: SiMongodb, color: "#47A248", proficiency: 87 },
     { name: "PostgreSQL", icon: SiPostgresql, color: "#4169E1", proficiency: 85 },
+    { name: "MySQL", icon: SiMysql, color: "#4479A1", proficiency: 84 },
   ],
-  Tools: [
+  Others: [
     { name: "Git", icon: SiGit, color: "#F05032", proficiency: 92 },
+    { name: "GitHub", icon: SiGithub, color: "#181717", proficiency: 90 },
+    { name: "REST API", icon: SiSwagger, color: "#0EA5E9", proficiency: 88 },
+    { name: "JWT Authentication", icon: SiJsonwebtokens, color: "#F7DF1E", proficiency: 85 },
+    { name: "Adobe Photoshop", icon: SiAdobephotoshop, color: "#31A8FF", proficiency: 78 },
+    { name: "MS Office", icon: SiOnlyoffice, color: "#107C41", proficiency: 75 },
     { name: "Docker", icon: SiDocker, color: "#2496ED", proficiency: 80 },
     { name: "Figma", icon: SiFigma, color: "#F24E1E", proficiency: 75 },
   ],
@@ -32,10 +45,12 @@ const radarData = [
   { skill: "React.js", proficiency: 95 },
   { skill: "Next.js", proficiency: 90 },
   { skill: "TypeScript", proficiency: 88 },
+  { skill: "JavaScript", proficiency: 95 },
   { skill: "Node.js", proficiency: 93 },
   { skill: "Express", proficiency: 90 },
   { skill: "MongoDB", proficiency: 87 },
   { skill: "PostgreSQL", proficiency: 85 },
+  { skill: "MySQL", proficiency: 84 },
   { skill: "Git", proficiency: 92 },
 ];
 
@@ -133,8 +148,8 @@ export function SkillsSection() {
                       )}
                         <div
                           className="
-      bg-gradient-to-br from-[#0f172a]/90 to-[#1e293b]/90
-      border border-white/5
+      dark:bg-gradient-to-br from-[#0f172a] to-[#1e293b]
+      border border-white/5 bg-white
       rounded-xl p-6 text-center
     
       hover:shadow-[0_0_25px_rgba(56,189,248,0.2)]
@@ -149,7 +164,7 @@ export function SkillsSection() {
           absolute inset-0
           bg-gradient-to-r from-blue-500/20 to-purple-500/20
           rounded-full blur-2xl opacity-0
-          group-hover:opacity-100
+          group-hover:opacity-100 
           transition-opacity duration-500
         "
                             />
@@ -163,7 +178,7 @@ export function SkillsSection() {
                               style={{ color: skill.color }}
                             />
                           </div>
-                          <span className="font-medium text-sm text-zinc-200 group-hover:text-white transition-colors duration-300">
+                          <span className="font-medium text-sm text-zinc-500 dark:text-zinc-200 dark:group-hover:text-white transition-colors duration-300">
                             {skill.name}
                           </span>
                         </div>

@@ -110,7 +110,7 @@ export function HeroSection() {
           </h1>
           <div className="hero-text max-w-3xl mx-auto mb-12">
             <p className="text-xl sm:text-2xl md:text-3xl font-medium text-foreground mb-4">
-              Full Stack MERN Developer
+              Full Stack Developer
             </p>
             <p className="text-lg sm:text-xl text-muted-foreground">
               Building Scalable & Modern Web Applications

@@ -19,24 +19,25 @@ import {
   FormLabel,
   FormMessage,
 } from "@/components/ui/form";
+import { SiGithub, SiGmail, SiLinkedin } from "react-icons/si";
 
 const socialLinks = [
   {
     name: "GitHub",
-    icon: Github,
-    url: "https://github.com",
+    icon: SiGithub,
+    url: "https://github.com/nazmul37290",
     color: "hover:text-foreground",
   },
   {
     name: "LinkedIn",
-    icon: Linkedin,
-    url: "https://linkedin.com",
+    icon: SiLinkedin,
+    url: "https://linkedin.com/in/nazmul-haque-nhz",
     color: "hover:text-[#0A66C2]",
   },
   {
     name: "Email",
-    icon: Mail,
-    url: "mailto:contact@nazmulhaque.dev",
+    icon: SiGmail,
+    url: "mailto:nazmulnjm@gmail.com",
     color: "hover:text-primary",
   },
 ];

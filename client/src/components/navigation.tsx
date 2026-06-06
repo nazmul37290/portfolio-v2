@@ -75,7 +75,7 @@ export function Navigation() {
             whileTap={{ scale: 0.95 }}
             data-testid="button-logo"
           >
-            NH
+            <img src="/logo-transparent.png" className="h-16" alt="" />
           </motion.button>
 
           {/* Desktop Navigation */}

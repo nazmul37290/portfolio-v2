@@ -36,7 +36,7 @@ export function AboutSection() {
           <div className="w-20 h-1 bg-gradient-to-r from-primary via-chart-2 to-chart-3 mx-auto rounded-full" />
         </motion.div>
 
-        <div className="grid md:grid-cols-2 gap-12 lg:gap-16 items-center">
+        <div className="grid md:grid-cols-3 gap-12 lg:gap-16 items-center">
           {/* Left side - Photo */}
           <motion.div
             initial={{ opacity: 0, x: -50 }}
@@ -105,30 +105,23 @@ export function AboutSection() {
             initial={{ opacity: 0, x: 50 }}
             animate={isInView ? { opacity: 1, x: 0 } : { opacity: 0, x: 50 }}
             transition={{ duration: 0.6, delay: 0.3 }}
-            className="space-y-6"
+            className="space-y-6 md:col-span-2"
           >
             <h3 className="text-2xl sm:text-3xl font-semibold text-foreground">
               Passionate about creating exceptional digital experiences
             </h3>
             <div className="space-y-4 text-muted-foreground text-base sm:text-lg">
               <p>
-                I'm a Full Stack MERN Developer with a passion for building
-                modern, scalable, and performant web applications. With expertise
-                in React.js, Next.js, Node.js, Express.js, and MongoDB, I
-                transform ideas into reality through clean code and intuitive
-                user experiences.
+                I’m a Full Stack MERN Developer passionate about building modern, scalable, and high-performance web applications. With strong expertise in React.js, Next.js, Node.js, Express.js, and MongoDB, I turn ideas into production-ready solutions through clean, maintainable code and intuitive user experiences.
               </p>
               <p>
-                My approach combines cutting-edge technologies with best
-                practices to deliver solutions that not only meet requirements
-                but exceed expectations. I thrive on tackling complex challenges
-                and continuously learning new technologies to stay at the
-                forefront of web development.
+                Beyond the MERN stack, I also work with Laravel combined with Inertia.js and React, enabling me to build powerful, full-stack applications that blend the robustness of Laravel with the flexibility of modern frontend technologies. This allows me to deliver seamless, SPA-like experiences without compromising backend efficiency.
               </p>
               <p>
-                Whether it's crafting pixel-perfect interfaces with Tailwind CSS
-                or architecting robust backend systems with TypeScript, I'm
-                committed to delivering excellence in every project.
+                My development approach focuses on leveraging cutting-edge technologies alongside industry best practices to create solutions that are not only functional but also optimized, secure, and scalable. I enjoy solving complex problems, architecting efficient systems, and continuously exploring new tools and frameworks to stay ahead in the ever-evolving web ecosystem.
+              </p>
+              <p>
+                From crafting pixel-perfect, responsive interfaces with Tailwind CSS to designing robust backend systems using TypeScript and RESTful APIs, I am committed to delivering high-quality work that exceeds expectations in every project.
               </p>
             </div>
           </motion.div>
