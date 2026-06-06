@@ -92,11 +92,11 @@ const Particles = () => {
   );
   if (init) {
     return (
-      <div className="">
+      <div className="h-full">
         <ParticlesComp
-          className=""
+          className="h-full"
           id="tsparticles"
-          height="500"
+          // height="500"
           particlesLoaded={particlesLoaded}
           options={options}
         ></ParticlesComp>

@@ -36,7 +36,7 @@ export function AboutSection() {
           <div className="w-20 h-1 bg-gradient-to-r from-primary via-chart-2 to-chart-3 mx-auto rounded-full" />
         </motion.div>
 
-        <div className="grid md:grid-cols-3 gap-12 lg:gap-16 items-center">
+        <div className="grid md:grid-cols-3 gap-16 items-center">
           {/* Left side - Photo */}
           <motion.div
             initial={{ opacity: 0, x: -50 }}
