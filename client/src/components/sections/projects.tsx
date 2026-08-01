@@ -78,6 +78,30 @@ features: [
       "/sharmin-mushroom-3.png",
     ],
   },
+  {
+    title: "Sera Agro – Premium Nursery Website",
+    description:
+      "A Laravel + React-based nursery website for plants, featuring a story-driven UI and conversion-focused product presentation.",
+    image: "/sera-agro-3.png",
+    tags: ["Laravel", "React", "Inertia.js", "Tailwind CSS", "E-Commerce", "UI/UX"],
+    liveUrl: "https://sera-agro.com",
+    githubUrl: "#",
+    longDescription:
+      "Sera Agro is a modern niche e-commerce platform built for selling nursery plants, gardening essentials, and green lifestyle products. The platform focuses on a curated selection rather than an overwhelming catalog, ensuring customers can easily discover and purchase the right plants for their needs.Instead of a traditional grid- based marketplace, the website follows a visually rich, story - driven layout that emphasizes plant care, environmental benefits, and sustainable living.Each section is designed to educate users about plant types, maintenance tips, and their impact on improving indoor and outdoor environments.The platform showcases a focused range of nursery products, including indoor plants, outdoor plants, saplings, and essential gardening supplies.Each product is presented with clear descriptions, care instructions, and engaging visuals to enhance user confidence and drive conversions.Built using Laravel with Inertia.js and React, the system delivers a smooth, SPA - like experience while maintaining strong backend flexibility.The architecture ensures scalability, maintainability, and high performance, while keeping the user experience clean, intuitive, and conversion - focused..",
+    features: [
+      "Laravel + React (Inertia.js) SPA architecture",
+      "Story-driven landing page focused on plant lifestyle and sustainability",
+      "Curated product showcase for nursery plants and gardening items",
+      "Conversion-optimized UI/UX design",
+      "Educational content for plant care and maintenance",
+      "Mobile-responsive and performance-optimized layout"
+    ],
+    screenshots: [
+      "/sera-agro.png",
+      "/sera-agro-2.png",
+      "/sera-agro-1.png",
+    ],
+  },
   // {
   //   title: "Social Media Dashboard",
   //   description:
